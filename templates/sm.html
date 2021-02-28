@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Article Review</title>
+	<style>
+        textarea{
+        resize: none;
+        }
+        button{
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" align="center">
+
+		<h1>Natural Language Processing App</h1>
+
+</div>
+ <form action="{{ url_for('textsummary')}}" method="POST" id="textclassify">
+	 	<div align="center">
+			<h2>Text Summarizer</h2>
+            <textarea id="first" name="text" rows="10" cols="100" >
+            </textarea>
+            <br><br><button id="button" type="submit">Summarize Text</button>
+            <br>
+		</div>
+ </form>
+<div class="container" align="center">
+<br><br><h3> Summary of your text is: {{ Summary }}</h3>
+	</div>
+</body>
+</html>

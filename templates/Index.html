@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Clasifier</title>
+    <style>
+        textarea {
+        resize: none;
+        }
+        button{
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        body {
+            background-color: lightgrey;
+            text-align: center;
+            padding: 0px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+           <div>
+               <h2>NATURAL LANGUAGE PROCESSING APPLICATION</h2>
+           </div>
+
+
+        </div>
+
+        <form action="{{ url_for('predict')}}" method="post" id="textclassify">
+            <h2>BBC News Classifier</h2>
+            <h3>Article</h3>
+
+
+            <textarea id="first" name="article" rows="10" cols="100">
+
+
+            </textarea>
+
+
+            <br><br><button id="button" type="submit">Classify Article</button>
+            <br>
+        </form>
+        <br><br>
+        <p>{{ text }}</p>
+        <br>
+        <br>
+        <a href="/Summary">move to text summary part</a>
+
+
+
+
+
+    </body>
+</html>
