@@ -6,3 +6,4 @@ flask~=1.1.2
 scikit-learn~=0.23.2
 nltk~=3.5
 pickleshare~=0.7.5
+gunicorn==19.9.0
